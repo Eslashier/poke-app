@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { possibleStatus } from "../../config/possibleStatus"
+import { getPokemons } from "../../services/pokemonServices";
 import { RootState } from "../store";
 
 type pokemonType = {
-    name: string,
-    url: string,
+    name?: string,
+    url?: string,
 }
 
 type pokemonStateType = {
@@ -43,6 +44,8 @@ const pokemonSlice = createSlice({
 })
 
 export default pokemonSlice.reducer
+
+export type { pokemonType}
 export const selectPokemonsState = () => (state: RootState) => state.pokemons.pokemons
 export const selectPokemonsStatus = () => (state: RootState) => state.pokemons.status
 export const selectPokemonsFetchError = () => (state: RootState) => state.pokemons.error
