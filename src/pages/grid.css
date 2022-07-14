@@ -1,0 +1,15 @@
+.containerPokemons {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.pokeCard {
+    padding: 10px;
+    background: skyblue;
+    margin: 10px;
+    flex-basis: calc(25% - 40px);
+}

@@ -23,7 +23,6 @@ const DisplayPokemonsComponent: React.FunctionComponent<any> = ({ props }) => {
             <div className="container">
                 <h2><b>{pokemonDetail.name}</b></h2>
                 <div className="line"></div>
-
                 <div className="containerTypes">
                     {pokemonDetail.types?.map((item: any) => {
                         return (
@@ -33,7 +32,7 @@ const DisplayPokemonsComponent: React.FunctionComponent<any> = ({ props }) => {
                         )
                     })}
                 </div>
-                
+
             </div>
         </div>
     )

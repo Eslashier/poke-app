@@ -29,8 +29,10 @@ const DisplayPokemons = () => {
     const pokemons = useSelector(selectPokemonsState())
 
     return (
-        <div className='main_content' >
-            {pokemons.map((pokemons:any) => <DisplayPokemonsComponent key={pokemons.name} props={pokemons} />)}
+        <div className='containerPokemons' >
+            {pokemons.map((pokemons: any) => (
+                <DisplayPokemonsComponent key={pokemons.name} props={pokemons} />
+            ))}
         </div>
     )
 
