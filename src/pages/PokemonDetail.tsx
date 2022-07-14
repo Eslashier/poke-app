@@ -10,14 +10,21 @@ const PokemonDetail = () => {
 
     return (
         <div>
-            <br/>
+            <br />
             <div className='containerPokemons' >
                 <DisplayPokemonsComponent key={pokemonToShow.name} props={pokemonToShow} />
             </div>
             <div className="center">
                 <Link to='/'>
                     <button className="buttonBack">
-                        &lt; &lt; Go back
+                        &lt; &lt; Go to List
+                    </button>
+                </Link>
+            </div>
+            <div className="center">
+                <Link to='/search'>
+                    <button className="buttonBack">
+                        &lt; &lt; Go to search
                     </button>
                 </Link>
             </div>

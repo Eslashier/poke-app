@@ -19,6 +19,14 @@
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
         font-size: 4vw;
     }
+
+    input[type=search] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 50%;
+        height: 5vw;
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -31,6 +39,14 @@
         font-size: 1.5vw;
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
     }
+
+    input[type=search] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 35%;
+        height: 2vw;
+        font-size: 1.5vw;
+    }
 }
 
 
@@ -40,5 +56,5 @@
 
 .center {
     text-align: center;
-  }
+}
 

@@ -50,7 +50,7 @@
     }
 
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgb(240, 160, 12);
+        box-shadow: 0 8px 16px 0 #490b72;
     }
 
 }
@@ -103,7 +103,7 @@
     }
 
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgb(240, 160, 12);
+        box-shadow: 0 8px 16px 0 #490b72;
     }
 
 }
