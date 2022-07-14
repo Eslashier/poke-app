@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { ENDPOINTDETAIL } from "../config/apiConfig";
 import "./cards.css"
 
@@ -18,23 +19,26 @@ const DisplayPokemonsComponent: React.FunctionComponent<any> = ({ props }) => {
     }, [])
 
     return (
-        <div className="card">
-            <img src={pokemonDetail.sprites?.front_default} className="pokeImage"></img>
-            <div className="container">
-                <h2><b>{pokemonDetail.name}</b></h2>
-                <div className="line"></div>
-                <div className="containerTypes">
-                    {pokemonDetail.types?.map((item: any) => {
-                        return (
-                            <div className="types" key={item.type.name}>
-                                {item.type.name}
-                            </div>
-                        )
-                    })}
-                </div>
 
-            </div>
+        <div className="card">
+            <Link className="linkContainer" to='/pokemon-detail' state={{ pokemonToShow: props }}>
+                <img src={pokemonDetail.sprites?.front_default} className="pokeImage"></img>
+                <div className="container">
+                    <h2><b>{pokemonDetail.name}</b></h2>
+                    <div className="line"></div>
+                    <div className="containerTypes">
+                        {pokemonDetail.types?.map((item: any) => {
+                            return (
+                                <div className="types" key={item.type.name}>
+                                    {item.type.name}
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </Link>
         </div>
+
     )
 
 }

@@ -7,9 +7,38 @@
     padding-bottom: 2px;
 }
 
-.pokeCard {
-    padding: 10px;
-    background: skyblue;
-    margin: 10px;
-    flex-basis: calc(25% - 40px);
+
+@media screen and (max-width: 800px) {
+    .buttonBack {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 4% 0.25% 4%;
+        margin: 2px;
+        font-size: 1.3vw;
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+        font-size: 4vw;
+    }
 }
+
+@media screen and (min-width: 800px) {
+    .buttonBack {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 4% 0.25% 4%;
+        margin: 2px;
+        font-size: 1.5vw;
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    }
+}
+
+
+.buttonBack:hover {
+    box-shadow: 0 8px 16px 0 #490b72;
+}
+
+.center {
+    text-align: center;
+  }
+
