@@ -23,9 +23,7 @@ const DisplayPokemons = () => {
     // }, [])
 
     const dispatch = useAppDispatch()
-
     useEffect(() => { dispatch(getPokemons()) }, [dispatch])
-
     const pokemons = useSelector(selectPokemonsState())
 
     return (
