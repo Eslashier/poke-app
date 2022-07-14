@@ -7,5 +7,5 @@ export const getPokemons = createAsyncThunk('getPokemons', async () => {
         method: 'GET' 
     })
     let pokemons = await response.json();
-    return (pokemons.results as pokemonType )
+    return (pokemons.results as pokemonType[] )
 })
