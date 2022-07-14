@@ -1,14 +1,26 @@
-import DisplayPokemonsComponent from "../components/DisplayPokemons";
-import { RootState, useAppDispatch } from "../state/store";
-import { useEffect } from "react";
+import DisplayPokemonsComponent from "../components/DisplayPokemonsComponent";
+import { useAppDispatch } from "../state/store";
+import { useEffect, useState } from "react";
 import { getPokemons } from "../services/pokemonServices";
 import { useSelector } from "react-redux";
 import { pokemonType, selectPokemonsState } from "../state/slice/pokemonSlice";
+import { ENDPOINTLIST } from "../config/apiConfig";
 import { getPokemonDetails } from "../services/pokemonDetailServices";
-import { selectPokemonDetailState } from "../state/slice/pokemonDetailSlice";
-import CallPokemons from "./CallPokemons";
+import "./grid.css"
 
 const DisplayPokemons = () => {
+
+    // const [pokemons, setPokemons] = useState([]) as any
+
+    // useEffect(() => {
+    //     const fetchPokemonList = async () => {
+    //         const data = await fetch(ENDPOINTLIST)   
+    //         const json = await data.json();
+    //         setPokemons(json.results)
+    //     }
+    //     fetchPokemonList()
+    //         .catch(console.error)     
+    // }, [])
 
     const dispatch = useAppDispatch()
 
@@ -16,25 +28,12 @@ const DisplayPokemons = () => {
 
     const pokemons = useSelector(selectPokemonsState())
 
-    console.log(pokemons)
-
-    let pokemonDetail = []
-
-    async function pokemonDetailFunction(pokemon:pokemonType){
-        await fetch(pokemon.url)
-            .then(response => response.json())
-            .then(data => pokemonDetail.push(data));
-    }
-
-    pokemons.map((pokemon)=>pokemonDetailFunction(pokemon))
-
-    console.log(pokemonDetail)
-
     return (
-        <div className='main_content'>
-            {pokemons.map((pokemonDetail) => <DisplayPokemonsComponent key={pokemonDetail.name} props={pokemonDetail} />)}
+        <div className='main_content' >
+            {pokemons.map((pokemons:any) => <DisplayPokemonsComponent key={pokemons.name} props={pokemons} />)}
         </div>
     )
+
 }
 
 export default DisplayPokemons;
