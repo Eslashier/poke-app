@@ -6,30 +6,33 @@ import { useSelector } from "react-redux";
 import { pokemonType, selectPokemonsState } from "../state/slice/pokemonSlice";
 import { getPokemonDetails } from "../services/pokemonDetailServices";
 import { selectPokemonDetailState } from "../state/slice/pokemonDetailSlice";
+import CallPokemons from "./CallPokemons";
 
 const DisplayPokemons = () => {
 
     const dispatch = useAppDispatch()
 
-    useEffect(() => { dispatch(getPokemons()) })
+    useEffect(() => { dispatch(getPokemons()) }, [dispatch])
 
     const pokemons = useSelector(selectPokemonsState())
-    const pokemonDetail = useSelector(selectPokemonDetailState())
-
-    const pokemondeprueba: pokemonType = {
-        name: "bulbasaur",
-        url: "test",
-    }
-
-
-    dispatch(getPokemonDetails(pokemondeprueba))
 
     console.log(pokemons)
+
+    let pokemonDetail = []
+
+    async function pokemonDetailFunction(pokemon:pokemonType){
+        await fetch(pokemon.url)
+            .then(response => response.json())
+            .then(data => pokemonDetail.push(data));
+    }
+
+    pokemons.map((pokemon)=>pokemonDetailFunction(pokemon))
+
     console.log(pokemonDetail)
 
     return (
         <div className='main_content'>
-            {pokemons.map((pokemon) => <DisplayPokemonsComponent key={pokemon.name} props={pokemon} />)}
+            {pokemons.map((pokemonDetail) => <DisplayPokemonsComponent key={pokemonDetail.name} props={pokemonDetail} />)}
         </div>
     )
 }
