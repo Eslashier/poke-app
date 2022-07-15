@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Pokemon GB';
-    src: url('.././config/Pokemon\ GB.ttf');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
 
 @media screen and (max-width: 600px) {
     .card {
@@ -9,7 +6,7 @@
         transition: 0.5s;
         flex-basis: calc(80%);
         margin: 10px;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         border-radius: 25px;
     }
 
@@ -130,7 +127,7 @@
         display: flex;
         gap: 1rem;
         font-size: 3.5vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .nav a {
@@ -156,7 +153,7 @@
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .nav button {
@@ -180,7 +177,7 @@
         transition: 0.5s;
         flex-basis: calc(25% - 4%);
         margin: 10px;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         border-radius: 25px;
     }
 
@@ -286,7 +283,7 @@
         display: flex;
         gap: 1rem;
         font-size: 1.3vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .nav a {
@@ -312,7 +309,7 @@
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .nav button {

@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Pokemon GB';
-    src: url('.././config/Pokemon\ GB.ttf');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
 
 .containerPokemons {
     display: flex;
@@ -21,7 +18,7 @@
         padding: 0.25% 4% 0.25% 4%;
         margin: 2px;
         font-size: 1.3vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
         font-size: 4vw;
     }
@@ -32,7 +29,7 @@
         width: 50%;
         height: 5vw;
         font-size: 3.5vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     input[type=submit] {
@@ -42,7 +39,7 @@
         padding: 0.25% 10% 0.25% 10%;
         margin: 2px;
         font-size: 6vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
     }
 
@@ -52,6 +49,7 @@
         width: 75%;
         height: 6vw;
         font-size: 3vw;
+        font-family: "Risque";
     }
 
     .middle {
@@ -64,13 +62,15 @@
     
     .title{
         font-size: 6vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         color: #490b72;
+        font-family: "Risque";
     }
     
     .nameLabel{
         font-size: 5vw;
         color: #490b72;
+        font-family: "Risque";
     }
 }
 
@@ -82,7 +82,7 @@
         padding: 1% 8% 0.25% 8%;
         margin: 2px;
         font-size: 1vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
     }
 
@@ -92,7 +92,7 @@
         width: 35%;
         height: 2vw;
         font-size: 1.5vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     input[type=submit] {
@@ -103,7 +103,7 @@
         margin: 2px;
         font-size: 1.5vw;
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     input[type=text] {
@@ -112,7 +112,7 @@
         width: 30%;
         height: 2vw;
         font-size: 1.5vw;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .middle {
@@ -126,19 +126,19 @@
     .title{
         font-size: 2.5vw;
         color: #490b72;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 
     .alert{
         font-size: 1vw;
         color: #aa1b16;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
     
     .nameLabel{
         font-size: 1.5vw;
         color: #490b72;
-        font-family: "Pokemon GB";
+        font-family: "Risque";
     }
 }
 
