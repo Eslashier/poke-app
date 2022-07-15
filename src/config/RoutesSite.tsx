@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import DisplayPokemons from "../pages/DisplayPokemons"
+import Login from "../pages/LogIn"
 import PokemonDetail from "../pages/PokemonDetail"
 import SearchPokemons from "../pages/SearchPokemons"
 
@@ -9,6 +10,7 @@ export default function RoutesSite() {
     if(true){
         return(
         <Routes>
+            <Route path='/login' element={<Login />} />
             <Route path='/' element={<DisplayPokemons />} />
             <Route path='/search' element={<SearchPokemons />} />
             <Route path='/pokemon-detail' element={<PokemonDetail />} />

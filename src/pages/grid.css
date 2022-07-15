@@ -27,6 +27,42 @@
         height: 5vw;
         font-size: 3.5vw;
     }
+
+    input[type=submit] {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 10% 0.25% 10%;
+        margin: 2px;
+        font-size: 6vw;
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    }
+
+    input[type=text] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 75%;
+        height: 6vw;
+        font-size: 3vw;
+    }
+
+    .middle {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .title{
+        font-size: 6vw;
+        color: #490b72;
+    }
+    
+    .nameLabel{
+        font-size: 5vw;
+        color: #490b72;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -47,6 +83,47 @@
         height: 2vw;
         font-size: 1.5vw;
     }
+
+    input[type=submit] {
+        background-color: #490b72;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.25% 4% 0.25% 4%;
+        margin: 2px;
+        font-size: 1.5vw;
+        box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+    }
+
+    input[type=text] {
+        border: 2px solid #490b72;
+        border-radius: 4px;
+        width: 30%;
+        height: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .middle {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .title{
+        font-size: 2.5vw;
+        color: #490b72;
+    }
+
+    .alert{
+        font-size: 1vw;
+        color: #aa1b16;
+    }
+    
+    .nameLabel{
+        font-size: 1.5vw;
+        color: #490b72;
+    }
 }
 
 
@@ -57,4 +134,6 @@
 .center {
     text-align: center;
 }
+
+
 

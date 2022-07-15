@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { possibleStatus } from "../../config/possibleStatus"
 
 type loginType = {
     name?: string,
@@ -12,19 +11,20 @@ type loginStateType = {
 
 const initialState: loginStateType = {
     login: {
+        name: '',
         isLoggedIn: false
     },
 }
 
 const logInSlice = createSlice({
-    name: "logged",
+    name: 'logged',
     initialState,
     reducers: {
         logInUserReducer(state, action) {
             const stateLoggedIn = {
                 ...state, login: {
-                    //name: action.payload.name,
-                    isLoggedIn: true
+                    name: action.payload.name,
+                    isLoggedIn: action.payload.isLoggedIn
                 }
             }
             return stateLoggedIn
@@ -41,6 +41,6 @@ const logInSlice = createSlice({
 })
 
 
+export type { loginType }
 export default logInSlice.reducer
-
 export const { logInUserReducer, logOutUserReducer } = logInSlice.actions
