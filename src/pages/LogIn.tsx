@@ -37,7 +37,9 @@ const Login = () => {
                 <div className="center">
                     <label className="nameLabel" htmlFor="name">Name:    </label>
                     <input type="text" id="name" placeholder="Type your name..." onChange={(e) => setName(e.target.value)}></input>
+                    <div>
                     <h1 hidden={validate} className="alert">Please enter a name</h1>
+                    </div>
                 </div>
                 <br />
                 <div className="center">

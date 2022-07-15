@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pokemon GB';
+    src: url('.././config/Pokemon\ GB.ttf');
+  }
+
 .containerPokemons {
     display: flex;
     display: flex;
@@ -16,6 +21,7 @@
         padding: 0.25% 4% 0.25% 4%;
         margin: 2px;
         font-size: 1.3vw;
+        font-family: "Pokemon GB";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
         font-size: 4vw;
     }
@@ -26,6 +32,7 @@
         width: 50%;
         height: 5vw;
         font-size: 3.5vw;
+        font-family: "Pokemon GB";
     }
 
     input[type=submit] {
@@ -35,6 +42,7 @@
         padding: 0.25% 10% 0.25% 10%;
         margin: 2px;
         font-size: 6vw;
+        font-family: "Pokemon GB";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
     }
 
@@ -56,6 +64,7 @@
     
     .title{
         font-size: 6vw;
+        font-family: "Pokemon GB";
         color: #490b72;
     }
     
@@ -70,9 +79,10 @@
         background-color: #490b72;
         border-radius: 5px;
         color: #fff;
-        padding: 0.25% 4% 0.25% 4%;
+        padding: 1% 8% 0.25% 8%;
         margin: 2px;
-        font-size: 1.5vw;
+        font-size: 1vw;
+        font-family: "Pokemon GB";
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
     }
 
@@ -82,6 +92,7 @@
         width: 35%;
         height: 2vw;
         font-size: 1.5vw;
+        font-family: "Pokemon GB";
     }
 
     input[type=submit] {
@@ -92,6 +103,7 @@
         margin: 2px;
         font-size: 1.5vw;
         box-shadow: 0 8px 16px 0 rgb(126, 126, 126);
+        font-family: "Pokemon GB";
     }
 
     input[type=text] {
@@ -100,6 +112,7 @@
         width: 30%;
         height: 2vw;
         font-size: 1.5vw;
+        font-family: "Pokemon GB";
     }
 
     .middle {
@@ -113,16 +126,19 @@
     .title{
         font-size: 2.5vw;
         color: #490b72;
+        font-family: "Pokemon GB";
     }
 
     .alert{
         font-size: 1vw;
         color: #aa1b16;
+        font-family: "Pokemon GB";
     }
     
     .nameLabel{
         font-size: 1.5vw;
         color: #490b72;
+        font-family: "Pokemon GB";
     }
 }
 

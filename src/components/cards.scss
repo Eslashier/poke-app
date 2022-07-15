@@ -1,4 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/831e1f4da157d96bc996f8c9f5f1e578?family=Pokemon+GB);
+@font-face {
+    font-family: 'Pokemon GB';
+    src: url('.././config/Pokemon\ GB.ttf');
+  }
 
 @media screen and (max-width: 600px) {
     .card {
@@ -85,6 +88,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 1rem;
             width: 100%;
         }
 
