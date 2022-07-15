@@ -16,7 +16,7 @@ const SearchPokemons = () => {
 
     const filterPokemons = (e: any) => {
         let pokeFilter = pokemons.filter(
-            poke => poke.name?.includes(e)
+            poke => poke.name?.includes(e.toLowerCase())
         )
         setPokemonsFiltered(pokeFilter)
         console.log(pokemonsFiltered)
