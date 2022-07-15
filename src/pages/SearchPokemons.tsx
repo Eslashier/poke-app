@@ -29,6 +29,7 @@ const SearchPokemons = () => {
 
     return (
         <div>
+            <br/>
             <div className="center">
                 <input type="search" placeholder="... search your pokemons" onChange={(e) => (filterPokemons(e.target.value))}></input>
             </div>
@@ -38,8 +39,8 @@ const SearchPokemons = () => {
                     <DisplayPokemonsComponent key={pokemons.name} props={pokemons} />
                 ))}
             </div>
-            <div>
-                <h1 hidden={pokemonsFiltered.length !== 0 && pokemons.length !==0}>There is no pokemons to show</h1>
+            <div className="center"> 
+                <h2 hidden={pokemonsFiltered.length !== 0 && pokemons.length !==0}>There is no pokemons to show</h2>
             </div>
         </div>
     )

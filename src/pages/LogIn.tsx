@@ -14,9 +14,6 @@ const Login = () => {
 
     let navigate = useNavigate();
 
-    const logStatus = useSelector((state: RootState) => state.login)
-    console.log(logStatus)
-
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (name) {

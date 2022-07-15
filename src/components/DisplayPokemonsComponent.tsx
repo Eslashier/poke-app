@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ENDPOINTDETAIL } from "../config/apiConfig";
-import "./cards.css"
+import "./cards.scss"
 
 
 const DisplayPokemonsComponent: React.FunctionComponent<any> = ({ props }) => {
